@@ -6,7 +6,11 @@
     <title>About Us - Mahee Digital Co</title>
     <link href="./dist/output.css" rel="stylesheet">
     <link href="/maheedigitalco/dist/output.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100">
     <!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur-sm fixed w-full z-20 top-0 border-b border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -29,23 +33,155 @@
     
     <main class="pt-24 pb-12 px-4">
         <div class="max-w-screen-xl mx-auto">
-            <h1 class="text-4xl font-bold text-gray-800 mb-8">About Us</h1>
-            <div class="bg-white rounded-lg shadow-sm p-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Hero Section -->
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h1 class="text-5xl font-bold text-gray-800 mb-4">Welcome to Our Story</h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Where innovation meets dedication, and your digital success becomes our mission.</p>
+            </div>
+
+            <!-- Main About Section -->
+            <div class="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl p-8 mb-16" data-aos="fade-up">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
-                        <p class="text-gray-600 mb-6">
-                            Mahee Digital Co is a forward-thinking digital solutions company dedicated to helping businesses thrive in the digital age. Our team of experts combines creativity with technical expertise to deliver exceptional results.
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="bg-gradient-to-br from-gray-800 to-gray-600 p-3 rounded-xl">
+                                <ion-icon name="people" class="text-3xl text-white"></ion-icon>
+                            </div>
+                            <h2 class="text-3xl font-bold text-gray-800">Who We Are</h2>
+                        </div>
+                        <p class="text-gray-600 mb-8 leading-relaxed">
+                            At Mahee Digital Co, we're more than just a digital solutions company – we're your partners in growth. Founded with a vision to transform how businesses interact with the digital world, we bring together creativity, technology, and strategy to create meaningful digital experiences.
                         </p>
-                        <p class="text-gray-600 mb-6">
-                            We believe in building lasting partnerships with our clients, understanding their unique needs, and delivering solutions that drive real business growth.
-                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                                <ion-icon name="checkmark-circle" class="text-2xl text-gray-700 mt-1"></ion-icon>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">10+ Years</h4>
+                                    <p class="text-sm text-gray-600">Of Digital Excellence</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                                <ion-icon name="happy" class="text-2xl text-gray-700 mt-1"></ion-icon>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">100+ Clients</h4>
+                                    <p class="text-sm text-gray-600">Growing Together</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                                <ion-icon name="globe" class="text-2xl text-gray-700 mt-1"></ion-icon>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Global Reach</h4>
+                                    <p class="text-sm text-gray-600">Local Understanding</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                                <ion-icon name="trending-up" class="text-2xl text-gray-700 mt-1"></ion-icon>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">95% Growth</h4>
+                                    <p class="text-sm text-gray-600">Client Success Rate</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                        <div class="absolute inset-0 bg-gradient-to-r from-gray-800/10 to-gray-800/30 rounded-lg"></div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" 
                              alt="Our Team" 
-                             class="rounded-lg shadow-lg">
+                             class="rounded-lg shadow-lg w-full h-full object-cover">
+                        <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-4 rounded-lg">
+                            <p class="text-gray-800 font-medium">"We believe in creating lasting partnerships and delivering excellence in every project we undertake."</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <ion-icon name="heart" class="text-4xl text-gray-800 mb-4"></ion-icon>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Values</h3>
+                    <p class="text-gray-600">We believe in integrity, innovation, and putting our clients first in everything we do.</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <ion-icon name="trophy" class="text-4xl text-gray-800 mb-4"></ion-icon>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600">To empower businesses with cutting-edge digital solutions that drive growth and success.</p>
+                </div>
+                <div class="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <ion-icon name="eye" class="text-4xl text-gray-800 mb-4"></ion-icon>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600">To be the leading force in digital transformation, setting new standards in innovation.</p>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="bg-gradient-to-br from-[#0F1235] via-[#1A1B3B] to-[#1E1B4B] text-white rounded-2xl p-12 mb-16 relative overflow-hidden" data-aos="fade-up">
+                <!-- Decorative elements -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+                
+                <div class="relative">
+                    <!-- Section Header -->
+                    <div class="text-center mb-12">
+                        <div class="inline-flex items-center justify-center p-3 bg-white/10 backdrop-blur-sm rounded-xl mb-4">
+                            <ion-icon name="person" class="text-3xl"></ion-icon>
+                        </div>
+                        <h2 class="text-4xl font-bold mb-4">Leadership</h2>
+                        <p class="text-gray-300 max-w-2xl mx-auto text-lg">Meet the visionary behind Mahee Digital Co, dedicated to transforming businesses through innovative digital solutions.</p>
+                    </div>
+
+                    <!-- Founder Card -->
+                    <div class="max-w-2xl mx-auto">
+                        <div class="bg-gradient-to-br from-[#0e123a] via-[#25274b] to-[#292567] backdrop-blur-sm rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 border border-white/5">
+                            <div class="flex flex-col md:flex-row items-center gap-8">
+                                <!-- Profile Image -->
+                                <div class="relative group">
+                                    <div class="w-48 h-48 rounded-2xl overflow-hidden border-4 border-white/10 group-hover:border-white/20 transition-all duration-300 shadow-xl">
+                                        <img src="https://img.freepik.com/free-vector/cute-woman-working-laptop-cartoon-vector-icon-illustration_138676-3741.jpg" 
+                                             alt="Mahee Amir - CEO & Founder"
+                                             class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F1235]/40 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </div>
+                                
+                                <!-- Profile Content -->
+                                <div class="text-center md:text-left flex-1">
+                                    <h3 class="text-2xl font-bold mb-2 text-white/90">Mahee Amir</h3>
+                                    <p class="text-purple-200 font-medium mb-4">CEO & Founder</p>
+                                    <p class="text-gray-300 mb-6 leading-relaxed">
+                                        With a passion for digital innovation and a vision for transforming businesses, Mahee leads our team in creating exceptional digital experiences that drive success.
+                                    </p>
+                                    <div class="flex items-center justify-center md:justify-start space-x-4">
+                                        <a href="#" class="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-300 border border-white/10 hover:border-white/20 group">
+                                            <ion-icon name="logo-linkedin" class="text-xl text-white group-hover:text-blue-300"></ion-icon>
+                                            <span class="text-white group-hover:text-blue-300">LinkedIn</span>
+                                        </a>
+                                        <a href="mailto:maheedigitalco@gmail.com" class="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-300 border border-white/10 hover:border-white/20 group">
+                                            <ion-icon name="mail-outline" class="text-xl text-white group-hover:text-blue-300"></ion-icon>
+                                            <span class="text-white group-hover:text-blue-300">Email</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quote -->
+                        <div class="mt-8 text-center">
+                            <blockquote class="text-xl italic text-purple-200">
+                                "Our mission is to empower businesses with innovative digital solutions that drive real growth and lasting success."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Start Your Digital Journey?</h2>
+                <a href="contact.html" class="inline-flex items-center px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors">
+                    <span>Get in Touch</span>
+                    <ion-icon name="arrow-forward" class="ml-2"></ion-icon>
+                </a>
             </div>
         </div>
     </main>
@@ -89,7 +225,13 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
         document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
             document.getElementById('navbar-default').classList.toggle('hidden');
         });
