@@ -17,6 +17,7 @@
             <a href="index.html" class="flex items-center space-x-3">
                 <span class="self-center text-xl font-semibold text-gray-800">Mahee Digital Co</span>
             </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <ion-icon name="menu-outline" class="w-5 h-5"></ion-icon>
             </button>
@@ -343,8 +344,11 @@
 
     <script>
         // Mobile menu toggle
-        document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
-            document.getElementById('navbar-default').classList.toggle('hidden');
+        const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
+        const menu = document.getElementById('navbar-default');
+        
+        button.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
         });
     </script>
 </body>
