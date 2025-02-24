@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahee Digital Co</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" nomodule></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-sm fixed w-full z-20 top-0 border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="/" class="flex items-center space-x-3">
+                <span class="self-center text-xl font-semibold text-gray-800">Mahee Digital Co</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <ion-icon name="menu-outline" class="w-5 h-5"></ion-icon>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+                    <li><a href="/" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0">Home</a></li>
+                    <li><a href="about.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0">About</a></li>
+                    <li><a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Digital Solutions for Modern Business</h1>
+                <p class="text-gray-600 mb-6">Transform your digital presence with cutting-edge solutions tailored for your success.</p>
+                <button class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition duration-300">Get Started</button>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-white/20 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Digital Business Solutions" 
+                         class="rounded-lg w-full h-auto shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-md transition duration-300">
+                    <ion-icon name="trending-up-outline" class="w-12 h-12 text-gray-700 mb-4"></ion-icon>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Growth Strategy</h3>
+                    <p class="text-gray-600">Strategic solutions to accelerate your business growth</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-md transition duration-300">
+                    <ion-icon name="code-slash-outline" class="w-12 h-12 text-gray-700 mb-4"></ion-icon>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Modern Technology</h3>
+                    <p class="text-gray-600">Cutting-edge tech solutions for your digital needs</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg hover:shadow-md transition duration-300">
+                    <ion-icon name="shield-checkmark-outline" class="w-12 h-12 text-gray-700 mb-4"></ion-icon>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Reliable Security</h3>
+                    <p class="text-gray-600">Enterprise-grade security for your peace of mind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-screen-xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                    <div class="bg-gray-50 p-4 rounded-lg inline-block mb-4">
+                        <ion-icon name="pencil-outline" class="w-8 h-8 text-gray-700"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Content Creation</h3>
+                    <p class="text-gray-600 mb-4">Engaging content that tells your story and connects with your audience. From blogs to social media posts.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            SEO-optimized writing
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Social media content
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Visual content design
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                    <div class="bg-gray-50 p-4 rounded-lg inline-block mb-4">
+                        <ion-icon name="megaphone-outline" class="w-8 h-8 text-gray-700"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-4">Strategic marketing solutions to boost your online presence and drive growth.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            SEO & SEM
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Social media marketing
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Email campaigns
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
+                    <div class="bg-gray-50 p-4 rounded-lg inline-block mb-4">
+                        <ion-icon name="globe-outline" class="w-8 h-8 text-gray-700"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Website Management</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive website maintenance and community management services.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            24/7 site monitoring
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Content updates
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion.icon>
+                            Community engagement
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="max-w-screen-xl mx-auto py-12 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Mahee Digital Co</h3>
+                    <p class="text-gray-400">Transforming businesses through digital innovation</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>info@maheedigital.co</li>
+                        <li>+1 (555) 123-4567</li>
+                        <li>123 Digital Street, Tech City</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="hover:text-white"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#" class="hover:text-white"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Mahee Digital Co. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
+            document.getElementById('navbar-default').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
