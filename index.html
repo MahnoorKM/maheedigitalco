@@ -8,7 +8,11 @@
     <link href="/maheedigitalco/dist/output.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" nomodule></script>
-    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -63,13 +67,13 @@
                             Get Started
                             <ion-icon name="arrow-forward-outline" class="ml-2"></ion-icon>
                         </a>
-                        <a href="#services" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
+                        <a href="#services-section" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
                             Our Services
                             <ion-icon name="grid-outline" class="ml-2"></ion-icon>
                         </a>
                     </div>
 
-                    <div class="mt-12 flex items-center gap-6">
+                    <!-- <div class="mt-12 flex items-center gap-6">
                         <div class="flex -space-x-2">
                             <img src="https://i.pravatar.cc/40?img=1" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
                             <img src="https://i.pravatar.cc/40?img=2" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
@@ -78,7 +82,7 @@
                         <div class="text-sm text-gray-400">
                             <span class="text-blue-400 font-semibold">500+</span> satisfied clients worldwide
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="md:w-1/2 relative">
@@ -107,22 +111,34 @@
     <!-- Statistics Section -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-screen-xl mx-auto">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
-                    <div class="text-gray-600">Projects Completed</div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors">
+                    <div class="text-blue-600 mb-4">
+                        <ion-icon name="time" class="text-4xl"></ion-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">On-Time Delivery</h3>
+                    <div class="text-gray-600">Meeting deadlines with precision and reliability</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">98%</div>
-                    <div class="text-gray-600">Client Satisfaction</div>
+                <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors">
+                    <div class="text-blue-600 mb-4">
+                        <ion-icon name="heart" class="text-4xl"></ion-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Customer First</h3>
+                    <div class="text-gray-600">Your success is our top priority</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
-                    <div class="text-gray-600">Team Members</div>
+                <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors">
+                    <div class="text-blue-600 mb-4">
+                        <ion-icon name="shield-checkmark" class="text-4xl"></ion-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Quality Assured</h3>
+                    <div class="text-gray-600">Excellence in every project we deliver</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">10+</div>
-                    <div class="text-gray-600">Years Experience</div>
+                <div class="text-center p-6 hover:bg-gray-50 rounded-xl transition-colors">
+                    <div class="text-blue-600 mb-4">
+                        <ion-icon name="infinite" class="text-4xl"></ion-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Ongoing Support</h3>
+                    <div class="text-gray-600">We're with you every step of the way</div>
                 </div>
             </div>
         </div>
@@ -131,7 +147,7 @@
     <!-- Feature Section -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-screen-xl mx-auto">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Why Choose Us</h2>
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Our Goals</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-6 bg-gray-50 rounded-lg hover:shadow-md transition duration-300">
                     <ion-icon name="trending-up-outline" class="w-12 h-12 text-gray-700 mb-4"></ion-icon>
@@ -153,7 +169,7 @@
     </section>
 
     <!-- Services Grid -->
-    <section class="py-16 px-4 bg-gray-50">
+    <section id="services-section" class="py-16 px-4 bg-gray-50">
         <div class="max-w-screen-xl mx-auto">
             <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -166,15 +182,19 @@
                     <ul class="text-gray-500 space-y-2">
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            SEO-optimized writing
+                            Graphic Design
                         </li>
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            Social media content
+                            Trending Reels
                         </li>
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            Visual content design
+                            Voiceover
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Copywriting
                         </li>
                     </ul>
                 </div>
@@ -188,15 +208,23 @@
                     <ul class="text-gray-500 space-y-2">
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            SEO & SEM
+                            Ads Management
                         </li>
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            Social media marketing
+                            SEO Writing
                         </li>
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            Email campaigns
+                            Performance Marketing
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Email Marketing
+                        </li>
+                        <li class="flex items-center">
+                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
+                            Influencer Management
                         </li>
                     </ul>
                 </div>
@@ -205,20 +233,16 @@
                     <div class="bg-gray-50 p-4 rounded-lg inline-block mb-4">
                         <ion-icon name="globe-outline" class="w-8 h-8 text-gray-700"></ion-icon>
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Website Management</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Community & Website Management</h3>
                     <p class="text-gray-600 mb-4">Comprehensive website maintenance and community management services.</p>
                     <ul class="text-gray-500 space-y-2">
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            24/7 site monitoring
+                            Community Management
                         </li>
                         <li class="flex items-center">
                             <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion-icon>
-                            Content updates
-                        </li>
-                        <li class="flex items-center">
-                            <ion-icon name="checkmark-outline" class="w-5 h-5 mr-2 text-green-500"></ion.icon>
-                            Community engagement
+                            Website Development
                         </li>
                     </ul>
                 </div>
@@ -226,64 +250,87 @@
         </div>
     </section>
 
-    <!-- Testimonials Section (New) -->
-    <section class="py-16 px-4 bg-gradient-to-br from-gray-900 to-gray-800">
-        <div class="max-w-screen-xl mx-auto">
-            <h2 class="text-3xl font-bold text-white text-center mb-12">What Our Clients Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pravatar.cc/60?img=1" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="text-white font-semibold">Sarah Johnson</h4>
-                            <p class="text-gray-400">Marketing Director</p>
-                        </div>
+    <!-- Why Work With Us Section (Replacing Testimonials) -->
+    <section class="py-16 px-4 bg-gradient-to-br from-gray-900 via-[#1a1b3b] to-gray-900 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-screen-xl mx-auto relative">
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-blue-300 text-sm font-medium mb-4">
+                    Why Choose Mahee Digital
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Experience Digital Excellence</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+                    Partner with us to elevate your brand's digital presence with innovative solutions and strategic expertise
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <ion-icon name="rocket" class="text-2xl text-white"></ion-icon>
                     </div>
-                    <p class="text-gray-300">"Mahee Digital transformed our online presence completely. Their team's expertise in digital marketing helped us achieve remarkable growth."</p>
-                    <div class="flex text-yellow-400 mt-4">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                    </div>
-                </div>
-                
-                <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pravatar.cc/60?img=2" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="text-white font-semibold">Michael Chen</h4>
-                            <p class="text-gray-400">Tech Startup CEO</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300">"The team's technical knowledge and creativity helped us launch our product successfully. Their support was invaluable."</p>
-                    <div class="flex text-yellow-400 mt-4">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Results-Driven Approach</h3>
+                    <p class="text-gray-300">We focus on delivering measurable results that directly impact your business growth and success.</p>
                 </div>
 
-                <div class="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-gray-700">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.pravatar.cc/60?img=3" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="text-white font-semibold">Emma Davis</h4>
-                            <p class="text-gray-400">E-commerce Owner</p>
-                        </div>
+                <!-- Card 2 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="bg-gradient-to-br from-purple-500 to-pink-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <ion-icon name="trending-up" class="text-2xl text-white"></ion-icon>
                     </div>
-                    <p class="text-gray-300">"Our online sales increased by 200% after implementing their digital marketing strategies. Highly recommended!"</p>
-                    <div class="flex text-yellow-400 mt-4">
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
-                        <ion-icon name="star"></ion-icon>
+                    <h3 class="text-xl font-bold text-white mb-4">Rapid Growth Strategy</h3>
+                    <p class="text-gray-300">Accelerate your business growth with our proven digital marketing strategies and solutions.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+                    <div class="bg-gradient-to-br from-blue-500 to-teal-500 w-12 h-12 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <ion-icon name="shield-checkmark" class="text-2xl text-white"></ion-icon>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Dedicated Support</h3>
+                    <p class="text-gray-300">Get personalized attention and support from our expert team throughout your journey.</p>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-16 bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-blue-400 font-bold text-3xl md:text-4xl mb-2 flex items-center justify-center gap-2">
+                            <ion-icon name="flash"></ion-icon>
+                            <span>Fast Delivery</span>
+                        </div>
+                        <p class="text-gray-400">Quick turnaround on all projects</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-purple-400 font-bold text-3xl md:text-4xl mb-2 flex items-center justify-center gap-2">
+                            <ion-icon name="cube"></ion-icon>
+                            <span>Custom Solutions</span>
+                        </div>
+                        <p class="text-gray-400">Tailored to your needs</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-teal-400 font-bold text-3xl md:text-4xl mb-2 flex items-center justify-center gap-2">
+                            <ion-icon name="gift"></ion-icon>
+                            <span>Added Value</span>
+                        </div>
+                        <p class="text-gray-400">Beyond expectations</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="mt-12 text-center">
+                <a href="contact.html" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-blue-500/25 group">
+                    Start Your Journey
+                    <ion-icon name="arrow-forward" class="ml-2 group-hover:translate-x-1 transition-transform"></ion-icon>
+                </a>
             </div>
         </div>
     </section>
@@ -312,27 +359,29 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="mb-8 md:mb-0">
                     <h3 class="text-xl font-semibold mb-4">Mahee Digital Co</h3>
-                    <p class="text-gray-400">Transforming businesses through digital innovation</p>
+                    <p class="text-gray-400">Transforming businesses through digital innovation.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li>info@maheedigital.co</li>
-                        <li>+1 (555) 123-4567</li>
-                        <li>123 Digital Street, Tech City</li>
+                        <li>maheedigitalco@gmail.com</li>
+                        <li>+92 333 1310221</li>
+                        <!-- <li>123 Digital Street, Tech City</li> -->
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-white"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#" class="hover:text-white"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="#" class="hover:text-white"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <!-- <a href="#" class="hover:text-white"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="hover:text-white"><ion-icon name="logo-linkedin"></ion-icon></a> -->
+                        <a href="https://www.instagram.com/maheedigitalco" class="hover:text-white"><ion-icon name="logo-instagram"></ion-icon></a>
                     </div>
                 </div>
             </div>
