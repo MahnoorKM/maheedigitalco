@@ -2040,6 +2040,10 @@ video {
     aspect-ratio: 16/9;
   }
 
+  .md\:aspect-\[16\/10\] {
+    aspect-ratio: 16/10;
+  }
+
   .md\:h-10 {
     height: 2.5rem;
   }
@@ -2122,6 +2126,11 @@ video {
     background-color: transparent;
   }
 
+  .md\:object-\[50\%_35\%\] {
+    -o-object-position: 50% 35%;
+       object-position: 50% 35%;
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -2156,6 +2165,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:aspect-\[16\/9\] {
+    aspect-ratio: 16/9;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
