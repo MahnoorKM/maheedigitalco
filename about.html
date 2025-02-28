@@ -232,15 +232,12 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        <!-- AOS.init({
-            duration: 800,
-            offset: 100,
-            once: true
-        }); -->
-        document.querySelector('[data-collapse-toggle="navbar-default"]').addEventListener('click', function() {
-            document.getElementById('navbar-default').classList.toggle('hidden');
+        const button = document.querySelector('[data-collapse-toggle="navbar-default"]');
+        const menu = document.getElementById('navbar-default');
+        
+        button.addEventListener('click', function() {
+            menu.classList.toggle('hidden');
         });
     </script>
 </body>
