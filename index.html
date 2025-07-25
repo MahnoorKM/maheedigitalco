@@ -35,10 +35,10 @@
         </nav>
         
         <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden">
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-full h-full bg-white z-50 md:hidden transform translate-x-full transition-transform duration-300 ease-in-out">
             <div class="p-4">
                 <div class="flex justify-between items-center mb-8">
-                    <img src="/img/mdc_logo.png" alt="Mahee Digital Co." class="h-8 w-auto">
+                    <img src="/logos/mdc_logo.png" alt="Mahee Digital Co." class="h-8 w-auto">
                     <button id="mobile-menu-close" class="text-gray-600 hover:text-black">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -46,9 +46,9 @@
                     </button>
                 </div>
                 <nav class="space-y-4">
-                    <a href="index.html" class="block text-xl text-black font-medium font-inter">Home</a>
-                    <a href="services.html" class="block text-xl text-gray-600 font-inter">Services</a>
-                    <a href="contact.html" class="block text-xl text-gray-600 font-inter">Contact Us</a>
+                    <a href="index.html" class="mobile-nav-link block text-xl text-black font-medium font-inter">Home</a>
+                    <a href="services.html" class="mobile-nav-link block text-xl text-gray-600 font-inter">Services</a>
+                    <a href="contact.html" class="mobile-nav-link block text-xl text-gray-600 font-inter">Contact Us</a>
                 </nav>
             </div>
         </div>
@@ -585,19 +585,30 @@
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('open');
-        });
+        function openMobileMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+        }
 
-        mobileMenuClose.addEventListener('click', () => {
-            mobileMenu.classList.remove('open');
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+        }
+
+        mobileMenuBtn.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+        // Close mobile menu when clicking on navigation links
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
         });
 
         // Close mobile menu when clicking outside
         mobileMenu.addEventListener('click', (e) => {
             if (e.target === mobileMenu) {
-                mobileMenu.classList.remove('open');
+                closeMobileMenu();
             }
         });
     </script>
